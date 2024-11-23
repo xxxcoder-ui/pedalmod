@@ -1,4 +1,3 @@
-*mod*
 Download
 We recommend configuring the runner under "\actions-runner". This will help avoid issues related to service identity folder permissions and long path restrictions on Windows.
 
