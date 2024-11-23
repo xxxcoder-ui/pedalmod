@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pedalboard</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Online guitar pedalboard">
+    <meta name="keywords" content="guitar rig pedal effect">
+    <meta name="author" content="ᗰOᗪIᖴIᗴᗪ">
+    <link rel="canonical" href="https://github.com/xxxcoder-ui/pedalfork/">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/xxxcoder-ui/pedalfork/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://github.com/xxxcoder-ui/pedalfork/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/xxxcoder-ui/pedalfork/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://github.com/xxxcoder-ui/pedalfork/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/xxxcoder-ui/pedalfork/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://github.com/xxxcoder-ui/pedalfork/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/xxxcoder-ui/pedalfork/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://github.com/xxxcoder-ui/pedalfork/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/xxxcoder-ui/pedalfork/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://github.com/xxxcoder-ui/pedalfork/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://github.com/xxxcoder-ui/pedalfork/favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="https://github.com/xxxcoder-ui/pedalfork/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://github.com/xxxcoder-ui/pedalfork/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://github.com/xxxcoder-ui/pedalfork/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://github.com/xxxcoder-ui/pedalfork/favicons/manifest.json">
+    <link rel="mask-icon" href="https://github.com/xxxcoder-ui/pedalfork/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://github.com/xxxcoder-ui/pedalfork/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Pedalboard">
+    <meta name="application-name" content="Pedalboard">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://github.com/xxxcoder-ui/pedalfork/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="https://github.com/xxxcoder-ui/pedalfork/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#EDA2F6">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" type="text/css">
+    <link rel="stylesheet" href="css/ionicons.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/pedal.css" type="text/css">
+
+  </head>
+  <body class="start">
+
+    <!-- TODO: better pedal styling (custom font etc.) -->
+    <!-- TODO: drag function on mobile browsers -->
+    <!-- TODO: add tuner -->
+
+
+    <!-- header -->
+    <header>
+      <div id="title">Pedalboard</div>
+    </header>
+
+    <!-- content -->
+    <main>
+
+      <div id="getready"><i class="icon ion-ios-play"></i></div>
+
+      <div id="message">Please allow microphone access.</div>
+
+      <div id="intro" class="hideselect">
+
+        <p>
+          <i class="icon ion-ios-mic-outline"></i>
+          <select id="selectinput" name="inputs"></select>
+
+          <span class="tooltip"><i class="icon ion-ios-information-outline"></i>
+            <span class="tooltiptext">
+              This is Pedalboard, a web live audio manipulation experiment.
+              Connect your guitar or mic to your computer using an audio interface.
+              Depending on your software and hardware configuration, there might be a
+              noticeable latency (remember - it's an experiment). For best results use
+              Google Chrome.
+            </span>
+          </span>
+
+        </p>
+
+      </div>
+
+
+      <div id="addpedal"><i class="icon ion-ios-plus-empty"></i></div>
+      <div id="delpedal"><i class="icon ion-ios-trash-outline"></i></div>
+      <div id="more"><i class="icon ion-ios-more-outline"></i></div>
+      <div id="share"><i class="icon ion-ios-upload-outline"></i></div>
+
+      <div id="record"></div>
+      <div id="recordshare">
+        <i class="icon ion-ios-download-outline"></i>
+        <i class="icon ion-social-dropbox-outline"></i>
+        <i class="icon ion-ios-cloud-outline"></i>
+        <i class="icon ion-ios-close-outline"></i>
+        <span></span>
+      </div>
+
+      <div id="pedalboard"></div>
+
+      <div id="allpedals"></div>
+
+      <a id="qrcodelink"><img id="qrcode"></img></a>
+      <input id="sharelink" readonly>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <span id="copyright">&#169; 2024 ᗰOᗪIᖴIᗴᗪ</span>
+      <span id="footlinks">
+        <a href="https://github.com/xxxcoder-ui/pedalfork/">Help</a> &#8729;
+        <a href="https://github.com/xxxcoder-ui/pedalfork/">GitHub</a>
+      </span>
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+    <!-- <script src="js/velocity.js"></script> -->
+    <script src="js/tone.js"></script>
+    <!-- <script src="js/lame.js"></script> -->
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.1.js"></script>
+    <script src="js/recorder.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropbox.js/0.10.3/dropbox.min.js"></script>
+    <script src="js/qr.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- for the noscript guys -->
+    <noscript>
+      <h1>Please enable JavaScript.</h1>
+    </noscript>
+
+  </body>
+</html>
