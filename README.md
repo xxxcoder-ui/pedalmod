@@ -27,7 +27,6 @@ noticeable latency (remember - it's an experiment). For best results use
 Google Chrome. *(To be honest, Chrome is the only browser supporting all
 features without problems.* :smirk:*)*
 
-[![screenshot](img/screenshot.png)](https://deermichel.github.io/pedalboard/#ZGlzdG9ydGlvbiwyODAwLDI4LC00LDE7ZGVsYXksNjQwLDI1LDMxLDA7c3VwZXJ2ZXJiLDE0MDAsMjQsMSw0MywwO3JldmVyYiw3NCw5NjAwLDM5LDA%3D)
 
 ### How-to
 
