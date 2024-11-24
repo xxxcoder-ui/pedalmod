@@ -1,6 +1,6 @@
 /* general */
 body {
-  background: #050000;
+  background: linear-gradient(#2E7D32, #9CCC65);
   color: #efefef;
   cursor: default;
   font-family: "Source Sans Pro", sans-serif;
@@ -10,7 +10,7 @@ body {
   padding: 0px;
 }
 a {
-  color: #efefef;
+  color: linear-gradient(#2E7D32, #9CCC65);
   text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
